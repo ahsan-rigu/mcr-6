@@ -14,6 +14,7 @@ const Restaurant = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     review(id, event.target[0].value, event.target[1].value);
+    setReviewModal(false);
   };
 
   return (
